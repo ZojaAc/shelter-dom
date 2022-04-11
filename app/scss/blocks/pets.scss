@@ -1,0 +1,149 @@
+.pets {
+  background-color: $bg-section;
+  
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 80px 40px 100px 40px;
+  }
+
+  &__title {
+    @include font(35px, 46px, 400);
+    letter-spacing: 0.06em;
+    color: $title-col;
+    font-family: $font-title;
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &--second {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      margin-top: 55px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__card {
+    background-color: $nav-hover;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--second {
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      background-color: $back-col;
+      cursor: pointer;
+
+      .pets__card-btn {
+        background-color: $mark-hover;
+        border-color: $mark-hover;
+      }
+    }
+    
+    &-name {
+      @include font(20px, 23px, 400);
+      letter-spacing: 0.06em;
+      font-family: $font-title;
+      color: $title-col;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    &-btn {
+      border: 2px solid $mark-col;
+      border-radius: 100px;
+      background-color: inherit;
+      padding: 15px 45px;
+      @include font(17px, 22px, 400);
+      font-family: $font-title;
+      letter-spacing: 0.06em;
+      color: $btn-txt;
+      margin-bottom: 30px;     
+    }
+  }
+
+  &__scroll {
+    border: 2px solid $mark-col;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+
+    &:hover {
+      background-color: $mark-hover;
+      border-color: $mark-hover;
+    }
+
+    &--left {
+      margin-right: 53px;
+    }
+    
+    &--right {
+      margin-left: 53px;
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    max-width: 262px;
+
+    &:hover {
+      background-color: $mark-hover;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 340px;
+    margin: 0 auto;
+
+    &-current {
+      background-color: $mark-col;
+
+      &:hover {
+        background-color: $mark-col;
+        border-color: $mark-col;
+        cursor: default;
+      }
+    }
+
+    &-left {
+      border: 2px solid $nav-txt;
+      color: $nav-txt;
+
+      &:hover {
+        cursor: default;
+        background-color: inherit;
+        border: 2px solid $nav-txt;
+        color: $nav-txt;
+      }
+    }
+  }
+}

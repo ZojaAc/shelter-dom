@@ -1,0 +1,18 @@
+.btn {
+  text-align: center;
+  color: $btn-txt;
+  @include font(17px, 22px, 400);
+  font-family: $font-title;
+  letter-spacing: 0.06em;
+  display: block;  
+  background-color: $mark-col;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;  
+  padding: 15px 45px;
+  // max-width: 170px;
+
+  // &:hover {
+  //   background-color: $col-accent;
+  // }
+}

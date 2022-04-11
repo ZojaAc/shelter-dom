@@ -1,0 +1,16 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "fonts"; // перенести наверх?
+
+// //подключаем БЭМ блоки
+@import "blocks/start.scss";
+@import "blocks/header.scss";
+@import "blocks/btn.scss";
+@import "blocks/intro.scss";
+@import "blocks/about.scss";
+@import "blocks/pets.scss";
+@import "blocks/help.scss";
+@import "blocks/donate.scss";
+@import "blocks/footer.scss";
+

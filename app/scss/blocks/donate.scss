@@ -1,0 +1,62 @@
+.donate {
+  background-color: $bg-section;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 80px 185px 100px 180px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    margin-left: 30px;
+
+    &-title {
+      @include font(35px, 46px, 400);
+      letter-spacing: 0.06em;
+      color: $title-col;
+      font-family: $font-title;
+    }
+
+    &-details {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include font(15px, 17px, 400);
+      letter-spacing: 0.06em;
+      color: $title-col;
+      font-family: $font-title;
+    }
+
+    &-payment {
+      padding: 10px 15px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:hover {
+        background-color: $mark-hover;
+      }
+    }
+
+    &-account {
+      margin-left: 15px;
+      @include font(20px, 23px, 400);
+      letter-spacing: 0.06em;
+      color: $title-col;
+    }
+
+    &-text {
+      margin-top: 20px;
+      @include font(12px, 18px, 400);
+      font-style: italic;
+      color: #b2b2b2;
+    }
+  }
+}

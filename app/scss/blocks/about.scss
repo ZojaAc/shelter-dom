@@ -1,0 +1,41 @@
+.about { 
+  background-color: $bg-main;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 70px 40px 85px 40px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  }
+
+  &__info {
+    width: 50%;
+    padding-top: 10px;
+
+    &-title {
+      @include font(35px, 46px, 400);
+      letter-spacing: 0.06em;
+      font-family: $font-title;
+      color: $title-col;
+      margin-bottom: 25px;
+      margin-top: 14px;
+    }
+
+    &-text {
+      @include font(15px, 24px, 400);
+      color: $text-col;
+      max-width: 430px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__img-block {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+  }
+}

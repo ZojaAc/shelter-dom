@@ -1,0 +1,40 @@
+.footer {
+  background: url(../../img/footer-bg.png) no-repeat center/cover;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 40px 40px 0 40px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__contacts {
+    &-title {
+      @include font(35px, 46px, 400);
+      letter-spacing: 0.06em;
+      color: $back-col;
+      font-family: $font-title;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    &-text {
+      display: block;
+      margin-left: 20px;
+      @include font(20px, 23px, 400);
+      letter-spacing: 0.06em;
+      font-family: $font-title;
+      color: $mark-col;
+    }
+  }
+}

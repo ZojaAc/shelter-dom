@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('page/head-data.html')
+</head>
+
+<body>
+  <header class="header header--second">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <a class="header__logo--second" href="index.html">
+          <h1 class="header__logo-title header__logo-title--second">Cozy House</h1>
+          <span class="header__logo-text header__logo-text--second">Shelter for pets in Boston</span>
+        </a>      
+      </div>
+      <div class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--second" href="index.html">About the shelter</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--active--second" href="second.html">Our pets</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--second" href="index.html#help">Help the shelter</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--second" href="#footer">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>          
+  </header>
+
+  <div class="pets">
+    <div class="pets__wrapper">
+      <h3 class="pets__title">Our friends who<br> are looking for a house</h3>
+      <div class="pets__block pets__block--second">
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-katrine.png" alt="pets-img"/>
+          <div class="pets__card-name">Katrine</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-jennifer.png" alt="pets-img"/>
+          <div class="pets__card-name">Jennifer</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-woody.png" alt="pets-img"/>
+          <div class="pets__card-name">Woody</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-sofia.png" alt="pets-img"/>
+          <div class="pets__card-name">Sophia</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-timmy.png" alt="pets-img"/>
+          <div class="pets__card-name">Timmy</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-charly.png" alt="pets-img"/>
+          <div class="pets__card-name">Charly</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-scarlet.png" alt="pets-img"/>
+          <div class="pets__card-name">Scarlett</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+        <div class="pets__card pets__card--second">
+          <img class="pets__card-img" src="../img/pets-freddy.png" alt="pets-img"/>
+          <div class="pets__card-name">Freddie</div>
+          <button class="pets__card-btn btn">Learn more</button>
+        </div>
+      </div>
+      <div class="pets__nav">
+        <button class="pets__scroll btn pets__nav-left" disabled>&lt;&lt;</button>
+        <button class="pets__scroll btn pets__nav-left" disabled>&lt;</button>
+        <button class="pets__scroll btn pets__nav-current">1</button>
+        <button class="pets__scroll btn">&gt;</button>
+        <button class="pets__scroll btn">&gt;&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  @@include('page/footer.html')
+  
+</body>
+</html>
