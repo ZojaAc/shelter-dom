@@ -4,33 +4,84 @@
   &__wrapper {
     margin: 0 auto;
     max-width: 1280px;
-    padding: 80px 185px 100px 180px;
+    padding: 80px 180px 100px 180px;
+
+    @include tablet {
+      padding: 80px 30px 100px 30px;
+    }
+
+    @include mobile {
+      padding: 42px 10px;
+    }
   }
 
   &__block {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    @include tablet {
+      order: 1;
+    }
   }
 
   &__info {
     margin-left: 30px;
+
+    @include tablet {
+      margin-left: 0;
+      max-width: 400px;
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      margin-left: 0;
+      margin-bottom: 42px;
+      max-width: 100%;
+    }
 
     &-title {
       @include font(35px, 46px, 400);
       letter-spacing: 0.06em;
       color: $title-col;
       font-family: $font-title;
+
+      @include mobile {
+        @include font(25px, 33px, 400);
+        font-family: $font-title;
+        text-align: center;
+      }
     }
 
     &-details {
       display: block;
-      margin-top: 20px;
+      margin-top: 15px;
       margin-bottom: 20px;
       @include font(15px, 17px, 400);
       letter-spacing: 0.06em;
       color: $title-col;
       font-family: $font-title;
+
+      @include tablet {
+        // @include font(15px, 17px, 400);
+        // font-family: $font-title;
+        // letter-spacing: 0.06em;
+        margin-top: 20px;
+        margin-bottom: 18px;
+      }
+
+      @include mobile {
+        @include font(15px, 24px, 400);
+        font-family: $font-title;
+        letter-spacing: normal;
+        text-align: center;
+      }
     }
 
     &-payment {
@@ -44,6 +95,12 @@
       &:hover {
         background-color: $mark-hover;
       }
+
+      @include mobile {
+        max-width: 280px;
+        padding: 10px 14px;
+        margin: 0 auto;
+      }
     }
 
     &-account {
@@ -52,13 +109,33 @@
       letter-spacing: 0.06em;
       color: $title-col;
       font-family: $font-title;
+
+      @include mobile {
+        @include font(15px, 17px, 400);
+        font-family: $font-title;
+      }
     }
 
     &-text {
       margin-top: 20px;
       @include font(12px, 18px, 400);
+      font-family: $font-text;
       font-style: italic;
       color: #b2b2b2;
+      max-width: 380px;
+
+      @include tablet {
+        padding-right: 15px;
+      }
+
+      @include mobile {
+        padding: 0;
+        // @include font(12px, 18px, 400);
+        text-align: justify;
+        font-style: italic;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 }

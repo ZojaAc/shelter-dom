@@ -5,12 +5,42 @@
     margin: 0 auto;
     max-width: 1280px;
     padding: 40px 40px 0 40px;
+
+    @include tablet {
+      padding: 30px 30px 0 30px;
+    }
+
+    @include mobile {
+      padding: 30px 10px 0 10px;
+    }
   }
 
   &__block {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    @include tablet {
+      margin-top: 15px;
+    }
+
+    @include mobile {
+      margin-top: 0;
+    }
   }
 
   &__contacts {
@@ -19,6 +49,17 @@
       letter-spacing: 0.06em;
       color: $back-col;
       font-family: $font-title;
+      margin-top: 16px;
+
+      @include tablet {
+        margin-top: 0;
+      }
+
+      @include mobile {
+        @include font(25px, 33px, 400);
+        font-family: $font-title;
+        text-align: center;
+      }
     }
 
     &-link {
@@ -26,6 +67,16 @@
       align-items: center;
       margin-top: 40px;
       margin-bottom: 40px;
+
+      &--adress {
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        @include mobile {
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+      }
     }
 
     &-text {
@@ -35,6 +86,20 @@
       letter-spacing: 0.06em;
       font-family: $font-title;
       color: $mark-col;
+    }
+  }
+
+  &__br {
+    @include mobile {
+      display: none;
+    }
+
+    &--mob {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
     }
   }
 }

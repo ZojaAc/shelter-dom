@@ -1,7 +1,6 @@
-//backgrounds
+// backgrounds
 $bg-main: #ffffff;
 $bg-section: #f6f6f6;
-// $bg-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
 
 // colors
 $main-txt: #000000;
@@ -14,13 +13,14 @@ $btn-txt: #292929;
 $title-col: #545454;
 $text-col: #4c4c4c;
 
-//fonts
+// fonts
 $font-text: Arial, Helvetica, sans-serif;
 $font-title: 'Georgia', Arial, Helvetica, sans-serif;
 
-// //breakpoints
-// $tablet: 768px;
-// $mobile: 320px;
+// breakpoints
+$desktop: 1279px;
+$tablet: 767px;
+$mobile: 320px;
 // // extra
 // $tablet1100: 1100px;
 // $tablet850: 850px;

@@ -2,11 +2,13 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 60px 40px 0 40px;
-  
-  &__info {
-    padding-top: 160px;
-    padding-bottom: 180px;
-    max-width: 460px;
+
+  @include tablet {
+    padding: 60px 30px 0 30px;
+  }
+
+  @include mobile {
+    padding: 55px 10px 0 10px;
   }
 
   &__block {
@@ -14,12 +16,40 @@
     flex-direction: row;
     // align-items: center;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  
+  &__info {
+    padding-top: 160px;
+    padding-bottom: 180px;
+    max-width: 460px;
+
+    @include tablet {
+      align-self: center;
+      padding-top: 0;
+      padding-bottom: 100px;
+    }
+
+    @include mobile {
+      padding-bottom: 105px;
+    }
   }
 
   &__title {
     @include font(44px, 57px, 400);
     color: $back-col;
     font-family: $font-title;    
+
+    @include mobile {
+      text-align: center;
+      @include font(25px, 33px, 400);
+      letter-spacing: 0.06em;
+      font-family: $font-title;
+    }
   }
 
   &__text {
@@ -28,6 +58,10 @@
     display: block;
     margin-top: 42px;
     margin-bottom: 42px;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__img {
@@ -36,10 +70,14 @@
 
   &__btn {
     max-width: 207px;
-    padding: 14px 30px;
+    padding: 15px 30px;
 
     &:hover {
       background-color: $mark-hover;
+    }
+
+    @include tablet {
+      margin: 0 auto;
     }
   }
 }

@@ -1,0 +1,205 @@
+.popup {
+  &__block {        
+    // position: fixed;
+    // inset: 0;
+    // display: flex;
+    // background-color: rgba(41, 41, 41, 0.6);      
+    display: none;
+    // border-radius: 9px;
+
+    &._active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // position: fixed;
+      // inset: 0;
+      // top: 20%;
+      // left: 15%;
+      // right: 15%;
+      // bottom: 20%;
+      // top: 0;
+      // bottom: 0;
+      // right: 0;
+      // left: 0;
+      // width: 320px;
+      // overflow: auto;
+      z-index: 4;
+      // background-color: rgba(41, 41, 41, 0.6);      
+
+      // @include tablet {
+      //   top: 25%;
+      //   bottom: 25%;
+      // }
+      margin: auto;
+
+      &:hover {
+        cursor: default;
+      }
+    }
+  } 
+
+  &__shadow {
+    background-color: rgba($btn-txt, 0.6); 
+    // background-color: #545454; 
+    top: 0;
+    left: 0;
+    position: absolute;
+    // position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;    
+    pointer-events: none;
+    z-index: 3;
+
+    &._active {
+      display: block;
+      pointer-events: all;
+      position: fixed;
+      inset: 0;
+      display: flex;
+
+      &:hover {
+        cursor: pointer;
+      }      
+    }
+  }
+
+  &__wrapper {
+    margin: auto;
+    position: relative;
+  }
+
+  &__btn {
+    position: absolute;
+    right: -45px;
+    top: -45px;
+    width: 52px;
+    height: 52px;
+    background-color: inherit;
+    border-radius: 100px;
+    border: 2px solid $mark-col;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $mark-col;
+    }
+
+    @include mobile {
+      right: -20px;
+      top: -55px;
+    }
+  }
+
+  &__info {
+    background-color: $nav-hover;
+    border-radius: 9px;    
+    color: $main-txt;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+
+    @include tablet {
+      width: 630px;
+    }
+
+    @include mobile {
+      width: 240px;
+    }
+  }
+
+  &__img {
+    width: 500px;
+    height: 500px;
+    border-radius: 9px;
+
+    @include tablet {
+      width: 350px;
+      height: 350px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-left: 30px;
+    margin-right: 20px;
+
+    @include tablet {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @include mobile {
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+
+  &__name {
+    @include font(35px, 46px, 400);
+    font-family: $font-title;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__type {
+    @include font(20px, 23px, 400);
+    font-family: $font-title;
+    letter-spacing: 0.06em;
+
+    @include mobile {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__details li {
+    list-style: inside;
+    color: $mark-col;
+    
+    span {
+      color: $main-txt;
+    }
+  }
+
+  &__details-tex, &__details-tit {
+    @include font(15px, 17px, 400);
+    font-family: $font-title;
+    letter-spacing: 0.06em;
+  }
+
+  &__details-tit {
+    font-weight: bold;
+  }  
+
+  &__description {
+    @include font(15px, 17px, 400);
+    font-family: $font-title;
+    letter-spacing: 0.06em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @include tablet {
+      @include font(13px, 14px, 400);
+      font-family: $font-title;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      text-align: justify;
+    }
+  }
+}

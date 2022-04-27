@@ -6,6 +6,14 @@
   justify-content: space-between;
   align-items: center;
 
+  @include tablet {
+    padding: 30px 30px 0 30px;
+  }
+
+  @include mobile {
+    padding: 30px 53px 0 10px;
+  }
+
   &--second {
     max-width: 100%;
     padding: 0;
@@ -14,6 +22,7 @@
     background-color: $bg-main;
     position: sticky;
     top: 0;
+    z-index: 2;
   }
 
   &__wrapper {
@@ -23,10 +32,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+      padding: 30px;
+    }
+
+    @include mobile {
+      padding: 30px 50px 30px 10px;
+    }
   }
   
   &__logo {
     cursor: pointer;
+    z-index: 5;
     
     &-title{
       color: $mark-col;
@@ -37,6 +55,9 @@
 
       &--second {
         color: $title-col;
+        @include tablet {
+          margin-bottom: 8px;
+        }
       }
     }
 
@@ -49,17 +70,69 @@
       &--second {
         color: $btn-txt;
       }
-    }    
+    }  
+    
+    // &._active {     
+    //   position: absolute;
+    //   top: 30px;
+    //   right: 126px;
+    // }
   }
 
   &__nav {
+    @include mobile {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 320px;
+      overflow: auto;
+      opacity: 0;
+      transition: opacity 500ms ease, transform 1000ms ease, visibility 1000ms ease;
+      // transition: .2s visibility linear, .2s opacity linear;
+      transform: translateX(100%);
+      z-index: 2;
+      background-color: #292929;     
+    }
+
+    &--second {
+      @include mobile {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 320px;
+        overflow: auto;
+        opacity: 0;
+        transition: opacity 500ms ease, transform 1000ms ease, visibility 1000ms ease;
+        transform: translateX(100%);
+        z-index: 2;
+        background-color: $bg-main;
+        // box-shadow: -55px 0px 0px 0px rgba($bg-main, 0.6);
+      }
+    }
+
     &-list {
       display: flex;
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 248px;
+      }
     }
 
     &-item {
       margin-left: 15px;
       @include font(15px, 24px, 400);      
+
+      @include mobile {
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
     }
 
     &-link {
@@ -90,6 +163,84 @@
           &:hover {
             color: $btn-txt;
           }
+        }
+      }
+
+      @include mobile {
+        @include font(32px, 51px, 400);
+      }
+    }
+
+    // открытие всего меню на 767px и меньше, при нажатии на бургер
+   
+    &._active {
+      // display: flex;     
+      visibility: visible; 
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+    z-index: 5;
+    border: none;
+    background-color: inherit;    
+    transition: transform 1000ms ease;
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+    
+    &-line {
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $mark-col;
+      margin-bottom: 8px;
+     
+      &--sec {
+        background-color: #000000;
+      }
+    }
+
+    &-line:last-child {
+      margin-bottom: 0;
+    }    
+
+    &._active {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__shadow {
+    @include tablet {
+      background-color: rgba(41, 41, 41, 0.6); 
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: none;    
+
+      &._active {
+        display: block;
+      }
+    }
+
+    &--second {
+      @include tablet {
+        background-color: rgba($bg-main, 0.7); 
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;    
+  
+        &._active {
+          display: block;
         }
       }
     }

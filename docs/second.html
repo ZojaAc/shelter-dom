@@ -22,7 +22,12 @@
           <span class="header__logo-text header__logo-text--second">Shelter for pets in Boston</span>
         </a>      
       </div>
-      <div class="header__nav">
+      <button class="header__burger burger-s-js">
+        <span class="header__burger-line header__burger-line--sec"></span>
+        <span class="header__burger-line header__burger-line--sec"></span>
+        <span class="header__burger-line header__burger-line--sec"></span>
+      </button>
+      <nav class="header__nav header__nav--second menu-s-js">
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a class="header__nav-link header__nav-link--second" href="index.html">About the shelter</a>
@@ -34,74 +39,383 @@
             <a class="header__nav-link header__nav-link--second" href="index.html#help">Help the shelter</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link header__nav-link--second" href="#footer">Contacts</a>
+            <a class="header__nav-link header__nav-link--second nav-link3-js" href="#footer">Contacts</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>          
   </header>
+  <div class="header__shadow--second shadow-s-js"></div>
 
-  <div class="pets">
-    <div class="pets__wrapper">
+  <div class="pets popup">
+    <div class="pets__wrapper pets__wrapper--second">
       <h3 class="pets__title">Our friends who<br> are looking for a house</h3>
-      <div class="pets__block pets__block--second">
-        <div class="pets__card pets__card--second">
+      <div class="pets__block pets__block--second block-second-js">
+        
+        <div class="pets__card pets__card--second card1-js item1" id="1">
           <img class="pets__card-img" src="img/pets-katrine.png" alt="pets-img"/>
           <div class="pets__card-name">Katrine</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
-        <div class="pets__card pets__card--second">
+        <div class="popup__shadow popup-shad1-js">
+          <div class="pets__popup popup__block popup1-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn1-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-katrine.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Katrine</h3>
+                  <span class="popup__type">Cat - British Shorthair</span>
+                  <p class="popup__description">Katrine is a beautiful girl. She is as soft as the 
+                    finest velvet with a thick lush fur. Will love you until the last breath she takes 
+                    as long as you are the one. She is picky about her affection. She loves cuddles and 
+                    to stretch into your hands for a deeper relaxations.
+                  </p>
+                  <ul class="popup__details">
+                    <li><span class="popup__details-tit">Age: </span><span class="popup__details-tex">6 months</span></li>
+                    <li><span class="popup__details-tit">Inoculations: </span><span class="popup__details-tex">panleukopenia</span></li>
+                    <li><span class="popup__details-tit">Diseases: </span><span class="popup__details-tex">none</span></li>
+                    <li><span class="popup__details-tit">Parasites: </span><span class="popup__details-tex">none</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pets__card pets__card--second card2-js item2" id="2">
           <img class="pets__card-img" src="img/pets-jennifer.png" alt="pets-img"/>
           <div class="pets__card-name">Jennifer</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
-        <div class="pets__card pets__card--second">
+        <div class="popup__shadow popup-shad2-js">
+          <div class="pets__popup popup__block popup2-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn2-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-jennifer.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Jennifer</h3>
+                  <span class="popup__type">Dog - Labrador</span>
+                  <p class="popup__description">Jennifer is a sweet 2 months old Labrador that is 
+                    patiently waiting to find a new forever home. This girl really enjoys being able to 
+                    go outside to run and play, but won't hesitate to play up a storm in the house if she 
+                    has all of her favorite toys.
+                  </p>
+                  <ul class="popup__details">
+                    <li>
+                      <span class="popup__details-tit">Age: </span>
+                      <span class="popup__details-tex">2 months</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Inoculations: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Diseases: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Parasites: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>      
+
+        <div class="pets__card pets__card--second card3-js item3" id="3">
           <img class="pets__card-img" src="img/pets-woody.png" alt="pets-img"/>
           <div class="pets__card-name">Woody</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
-        <div class="pets__card pets__card--second">
+        <div class="popup__shadow popup-shad3-js">
+          <div class="pets__popup popup__block popup3-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn3-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-woody.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Woody</h3>
+                  <span class="popup__type">Dog - Golden Retriever</span>
+                  <p class="popup__description">Woody is a handsome 3 1/2 year old boy. Woody does know 
+                    basic commands and is a smart pup. Since he is on the stronger side, he will learn a 
+                    lot from your training. Woody will be happier when he finds a new family that can 
+                    spend a lot of time with him.
+                  </p>
+                  <ul class="popup__details">
+                    <li>
+                      <span class="popup__details-tit">Age: </span>
+                      <span class="popup__details-tex">3 years 6 months</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Inoculations: </span>
+                      <span class="popup__details-tex">adenovirus, distemper</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Diseases: </span>
+                      <span class="popup__details-tex">right back leg mobility reduced</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Parasites: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pets__card pets__card--second pets__card--second--extra-mobl card4-js item4" id="4">
           <img class="pets__card-img" src="img/pets-sofia.png" alt="pets-img"/>
           <div class="pets__card-name">Sophia</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
-        <div class="pets__card pets__card--second">
+        <div class="popup__shadow popup-shad4-js">
+          <div class="pets__popup popup__block popup4-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn4-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-sofia.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Sophia</h3>
+                  <span class="popup__type">Dog - Shih tzu</span>
+                  <p class="popup__description">Sophia here and I'm looking for my forever home to live 
+                    out the best years of my life. I am full of energy. Everyday I'm learning new things, 
+                    like how to walk on a leash, go potty outside, bark and play with toys and I still 
+                    need some practice.
+                  </p>
+                  <ul class="popup__details">
+                    <li>
+                      <span class="popup__details-tit">Age: </span>
+                      <span class="popup__details-tex">1 month</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Inoculations: </span>
+                      <span class="popup__details-tex">parvovirus</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Diseases: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Parasites: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pets__card pets__card--second pets__card--second--extra-mobl card5-js item5" id="5">
           <img class="pets__card-img" src="img/pets-timmy.png" alt="pets-img"/>
           <div class="pets__card-name">Timmy</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
-        <div class="pets__card pets__card--second">
+        <div class="popup__shadow popup-shad5-js">
+          <div class="pets__popup popup__block popup5-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn5-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-timmy.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Timmy</h3>
+                  <span class="popup__type">Cat - British Shorthair</span>
+                  <p class="popup__description">Timmy is an adorable grey british shorthair male. He 
+                    loves to play and snuggle. He is neutered and up to date on age appropriate 
+                    vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and 
+                    wants a person to share his thoughts with.
+                  </p>
+                  <ul class="popup__details">
+                    <li>
+                      <span class="popup__details-tit">Age: </span>
+                      <span class="popup__details-tex">2 years 3 months</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Inoculations: </span>
+                      <span class="popup__details-tex">calicivirus, viral rhinotracheitis</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Diseases: </span>
+                      <span class="popup__details-tex">kidney stones</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Parasites: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pets__card pets__card--second pets__card--second--extra-mobl card6-js item6" id="6">
           <img class="pets__card-img" src="img/pets-charly.png" alt="pets-img"/>
           <div class="pets__card-name">Charly</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
-        <div class="pets__card pets__card--second">
+        <div class="popup__shadow popup-shad6-js">
+          <div class="pets__popup popup__block popup6-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn6-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-charly.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Charly</h3>
+                  <span class="popup__type">Dog - Jack Russell Terrier</span>
+                  <p class="popup__description">This cute boy, Charly, is three years old and he likes 
+                    adults and kids. He isn’t fond of many other dogs, so he might do best in a single 
+                    dog home. Charly has lots of energy, and loves to run and play. We think a fenced 
+                    yard would make him very happy.
+                  </p>
+                  <ul class="popup__details">
+                    <li>
+                      <span class="popup__details-tit">Age: </span>
+                      <span class="popup__details-tex">8 years</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Inoculations: </span>
+                      <span class="popup__details-tex">bordetella bronchiseptica, leptospirosis</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Diseases: </span>
+                      <span class="popup__details-tex">deafness, blindness</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Parasites: </span>
+                      <span class="popup__details-tex">lice, fleas</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pets__card pets__card--second pets__card--second--extra-tabl card7-js item7" id="7">
           <img class="pets__card-img" src="img/pets-scarlet.png" alt="pets-img"/>
           <div class="pets__card-name">Scarlett</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
-        <div class="pets__card pets__card--second">
+        <div class="popup__shadow popup-shad7-js">
+          <div class="pets__popup popup__block popup7-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn7-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-scarlet.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Scarlett</h3>
+                  <span class="popup__type">Dog - Jack Russell Terrier</span>
+                  <p class="popup__description">Scarlett is a happy, playful girl who will make you laugh 
+                    and smile. She forms a bond quickly and will make a loyal companion and a wonderful 
+                    family dog or a good companion for a single individual too since she likes to hang 
+                    out and be with her human.
+                  </p>
+                  <ul class="popup__details">
+                    <li>
+                      <span class="popup__details-tit">Age: </span>
+                      <span class="popup__details-tex">3 months</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Inoculations: </span>
+                      <span class="popup__details-tex">parainfluenza</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Diseases: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Parasites: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pets__card pets__card--second pets__card--second--extra-tabl card8-js item8" id="8">
           <img class="pets__card-img" src="img/pets-freddy.png" alt="pets-img"/>
           <div class="pets__card-name">Freddie</div>
           <button class="pets__card-btn btn">Learn more</button>
         </div>
+        <div class="popup__shadow popup-shad8-js">
+          <div class="pets__popup popup__block popup8-js">
+            <div class="popup__wrapper">
+              <button class="popup__btn popbtn8-js">
+                <img src="img/btn-close.png" alt="btn-close">
+              </button>
+              <div class="popup__info">
+                <img class="popup__img" src="img/pets-freddy.png" alt="pets-img">
+                <div class="popup__text">
+                  <h3 class="popup__name">Freddie</h3>
+                  <span class="popup__type">Cat - British Shorthair</span>
+                  <p class="popup__description">Freddie is a little shy at first, but very sweet when he 
+                    warms up. He likes playing with shoe strings and bottle caps. He is quick to learn 
+                    the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, 
+                    and is looking to find his forever home.
+                  </p>
+                  <ul class="popup__details">
+                    <li>
+                      <span class="popup__details-tit">Age: </span>
+                      <span class="popup__details-tex">2 months</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Inoculations: </span>
+                      <span class="popup__details-tex">rabies</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Diseases: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                    <li>
+                      <span class="popup__details-tit">Parasites: </span>
+                      <span class="popup__details-tex">none</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+
       </div>
       <div class="pets__nav">
-        <button class="pets__scroll btn pets__nav-left" disabled>&lt;&lt;</button>
-        <button class="pets__scroll btn pets__nav-left" disabled>&lt;</button>
-        <button class="pets__scroll btn pets__nav-current">1</button>
-        <button class="pets__scroll btn">&gt;</button>
-        <button class="pets__scroll btn">&gt;&gt;</button>
+        <button class="pets__scroll btn pets__nav-left page-first-js">&lt;&lt;</button>
+        <button class="pets__scroll btn pets__nav-left page-left-js">&lt;</button>
+        <button class="pets__scroll btn pets__nav-current page-current-js">1</button>
+        <button class="pets__scroll btn page-right-js">&gt;</button>
+        <button class="pets__scroll btn page-last-js">&gt;&gt;</button>
       </div>
     </div>
   </div>
 
   <footer class="footer">
-  <!-- вынести в отдельную стр, повторяется -->
   <div class="footer__wrapper">
     <div class="footer__block">
       <div class="footer_contacts" id="footer">
-        <h3 class="footer__contacts-title">For questions<br> and suggestions</h3>
+        <h3 class="footer__contacts-title">For questions<br class="footer__br"> and<br class="footer__br--mob"> suggestions</h3>
         <a class="footer__contacts-link" href="mailto:shelter.com">
           <img src="img/icon-mail.svg" alt="email-img">
           <span class="footer__contacts-text">email@shelter.com</span>
@@ -112,20 +426,160 @@
         </a>
       </div>
       <div class="footer_contacts">
-        <h3 class="footer__contacts-title">We are waiting<br> for your visit</h3>
-        <a class="footer__contacts-link" href="https://goo.gl/maps/nYSyL7uahrTZxePP8" target="_blank">
+        <h3 class="footer__contacts-title">We are waiting<br class="footer__br"> for<br class="footer__br--mob"> your visit</h3>
+        <a class="footer__contacts-link footer__contacts-link--adress" href="https://goo.gl/maps/nYSyL7uahrTZxePP8" target="_blank">
           <img src="img/icon-pin.svg" alt="pin-img">
           <span class="footer__contacts-text">1 Central Street, Boston<br> (entrance from the store)</span>
         </a>
-        <a class="footer__contacts-link" href="https://goo.gl/maps/J1ohaLN97pcBo6pYA" target="_blank">
+        <a class="footer__contacts-link footer__contacts-link--adress" href="https://goo.gl/maps/J1ohaLN97pcBo6pYA" target="_blank">
           <img src="img/icon-pin.svg" alt="pin-img">
           <span class="footer__contacts-text">18 South Park, London</span>
         </a>
       </div>
-      <img src="img/footer-puppy.png" alt="footer-img">
+      <picture class="footer__img">
+        <source media="(max-width: 767px)" srcset="img/footer-puppy-mobile.png">
+        <img class="footer__img" src="img/footer-puppy.png" alt="footer-img">
+      </picture>            
     </div>
   </div>
 </footer>  
+
+  <script>
+    const burgerS = document.querySelector('.burger-s-js');
+    const menuS = document.querySelector('.menu-s-js');
+    const body = document.querySelector('body');
+    const shadowS = document.querySelector('.shadow-s-js');
+   
+    const toggleMenu = function() {
+      menuS.classList.toggle('_active');
+    }
+    const toggleBtn = function() {
+      burgerS.classList.toggle('_active');
+    }
+    const toggleBody = function() {
+      body.classList.toggle('locked');
+    }
+    const toggleSh = function() {
+      shadowS.classList.toggle('_active');
+    }
+    
+    burgerS.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleMenu();
+      toggleBtn();
+      toggleBody();      
+      toggleSh();
+    });
+    
+    document.addEventListener('click', function(e) {
+        const target = e.target;
+        const its_menu = target == menuS || menuS.contains(target);
+        const its_btnMenu = target == burgerS;
+        const menu_is_active = menuS.classList.contains('_active');
+        
+        if (!its_menu && !its_btnMenu && menu_is_active) {
+          toggleMenu();
+          toggleBtn();
+          toggleBody();
+          toggleSh();
+        }
+    });
+
+
+    ///////////////////
+    // из бургерного меню работа якорных ссылок
+    const link3 = document.querySelector('.nav-link3-js');
+    
+    link3.addEventListener('click', () => {
+      menuS.classList.remove('_active');
+      burgerS.classList.remove('_active');
+      body.classList.remove('locked');
+      shadowS.classList.remove('_active');
+    });
+
+
+    ///////////////
+    // пагинация
+    // const box = document.querySelector('.block-second-js');
+    const pageLeft = document.querySelector('.page-left-js');
+    const pageRight = document.querySelector('.page-right-js');
+    const pageCurrent = document.querySelector('.page-current-js');
+    const pageFirst = document.querySelector('.page-first-js');
+    const pageLast = document.querySelector('.page-last-js');
+
+    let card1 = document.querySelector('.item1');
+    let card2 = document.querySelector('.item2');
+    let card3 = document.querySelector('.item3');
+    let card4 = document.querySelector('.item4');
+    let card5 = document.querySelector('.item5');
+    let card6 = document.querySelector('.item6');
+    let card7 = document.querySelector('.item7');
+    let card8 = document.querySelector('.item8');
+
+    // let y = Number(box.style.getPropertyValue('--pageside'));
+    
+    pageLeft.addEventListener('click', (e) => {
+      // box.style.setProperty('--pageside', -1);
+      e.preventDefault();
+      card7.style.order = "4";
+      card4.style.order = "5";
+      card2.style.order = "8";
+      card5.style.order = "1";
+    });
+     
+    pageRight.addEventListener('click', (e) => {
+      // box.style.setProperty('--pageside', 1); 
+      e.preventDefault();
+      card1.style.order = "4";
+      card3.style.order = "5";
+      card6.style.order = "8";
+      card8.style.order = "2";
+    });
+    
+    pageCurrent.addEventListener('click', (e) => {
+      // box.style.setProperty('--pageside', 0);  
+      e.preventDefault();
+      card1.style.order = "1";
+      card2.style.order = "2";
+      card3.style.order = "3";
+      card4.style.order = "4";
+      card5.style.order = "5";
+      card6.style.order = "6";
+      card7.style.order = "7";
+      card8.style.order = "8";
+    });
+
+    pageFirst.addEventListener('click', (e) => {
+      // box.style.setProperty('--pageside', 0);
+      e.preventDefault();  
+      card1.style.order = "8";
+      card2.style.order = "7";
+      card3.style.order = "6";
+      card4.style.order = "5";
+      card5.style.order = "4";
+      card6.style.order = "3";
+      card7.style.order = "2";
+      card8.style.order = "1";
+    });
+
+    pageLast.addEventListener('click', (e) => {
+      // box.style.setProperty('--pageside', 0);  
+      e.preventDefault();
+      card1.style.order = "5";
+      card2.style.order = "4";
+      card3.style.order = "3";
+      card4.style.order = "2";
+      card5.style.order = "1";
+      card6.style.order = "6";
+      card7.style.order = "7";
+      card8.style.order = "8";
+    });
+    
+    
+
+  </script>
+
+  <script src="js/main.js"></script>
   
 </body>
 </html>

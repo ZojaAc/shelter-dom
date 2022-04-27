@@ -1,9 +1,8 @@
 <footer class="footer">
-  <!-- вынести в отдельную стр, повторяется -->
   <div class="footer__wrapper">
     <div class="footer__block">
       <div class="footer_contacts" id="footer">
-        <h3 class="footer__contacts-title">For questions<br> and suggestions</h3>
+        <h3 class="footer__contacts-title">For questions<br class="footer__br"> and<br class="footer__br--mob"> suggestions</h3>
         <a class="footer__contacts-link" href="mailto:shelter.com">
           <img src="img/icon-mail.svg" alt="email-img">
           <span class="footer__contacts-text">email@shelter.com</span>
@@ -14,17 +13,20 @@
         </a>
       </div>
       <div class="footer_contacts">
-        <h3 class="footer__contacts-title">We are waiting<br> for your visit</h3>
-        <a class="footer__contacts-link" href="https://goo.gl/maps/nYSyL7uahrTZxePP8" target="_blank">
+        <h3 class="footer__contacts-title">We are waiting<br class="footer__br"> for<br class="footer__br--mob"> your visit</h3>
+        <a class="footer__contacts-link footer__contacts-link--adress" href="https://goo.gl/maps/nYSyL7uahrTZxePP8" target="_blank">
           <img src="img/icon-pin.svg" alt="pin-img">
           <span class="footer__contacts-text">1 Central Street, Boston<br> (entrance from the store)</span>
         </a>
-        <a class="footer__contacts-link" href="https://goo.gl/maps/J1ohaLN97pcBo6pYA" target="_blank">
+        <a class="footer__contacts-link footer__contacts-link--adress" href="https://goo.gl/maps/J1ohaLN97pcBo6pYA" target="_blank">
           <img src="img/icon-pin.svg" alt="pin-img">
           <span class="footer__contacts-text">18 South Park, London</span>
         </a>
       </div>
-      <img src="img/footer-puppy.png" alt="footer-img">
+      <picture class="footer__img">
+        <source media="(max-width: 767px)" srcset="img/footer-puppy-mobile.png">
+        <img class="footer__img" src="img/footer-puppy.png" alt="footer-img">
+      </picture>            
     </div>
   </div>
 </footer>  

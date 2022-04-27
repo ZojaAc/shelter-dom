@@ -3,25 +3,25 @@
 }
 
 @mixin tablet {
-  @media (max-width: $tablet) {
+  @media (max-width: $desktop) {
       @content;
   }
 }
 
 @mixin mobile {
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
       @content;
   }
 }
 
-@mixin tablet1100 {
-  @media (max-width: $tablet1100) {
-      @content;
-  }
-}
+// @mixin tablet1100 {
+//   @media (max-width: $tablet1100) {
+//       @content;
+//   }
+// }
 
-@mixin tablet850 {
-  @media (max-width: $tablet850) {
-      @content;
-  }
-}
+// @mixin tablet850 {
+//   @media (max-width: $tablet850) {
+//       @content;
+//   }
+// }
